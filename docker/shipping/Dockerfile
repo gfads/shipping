@@ -27,4 +27,4 @@ USER ${SERVICE_USER}
 #  org.label-schema.vcs-ref="${COMMIT}" \
 #  org.label-schema.schema-version="1.0"
 
-ENTRYPOINT ["rbinder", "/usr/local/bin/java.sh","-jar","/usr/src/app/app.jar", "--port=80"]
+ENTRYPOINT ["/usr/src/app/rbinder", "/usr/local/bin/java.sh","-jar","/usr/src/app/app.jar", "--port=8080"]
