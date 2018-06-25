@@ -28,3 +28,4 @@ USER ${SERVICE_USER}
 #  org.label-schema.schema-version="1.0"
 
 ENTRYPOINT ["/usr/src/app/rbinder", "/usr/local/bin/java.sh","-jar","/usr/src/app/app.jar", "--port=8080"]
+#ENTRYPOINT ["/usr/local/bin/java.sh","-jar","/usr/src/app/app.jar", "--port=8080"]
